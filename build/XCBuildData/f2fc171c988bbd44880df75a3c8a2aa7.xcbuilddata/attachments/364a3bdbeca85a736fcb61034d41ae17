@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_Dependency_managersVersionString[];
+ extern const double Pods_Dependency_managersVersionNumber;
+
+ const unsigned char Pods_Dependency_managersVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_Dependency_managers  PROJECT:Pods-1" "\n";
+ const double Pods_Dependency_managersVersionNumber __attribute__ ((used)) = (double)1.;
