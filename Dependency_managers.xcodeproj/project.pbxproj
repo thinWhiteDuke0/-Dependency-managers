@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F20D0BA2E8B142F0041D4FE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F20D0B92E8B142F0041D4FE /* SnapKit */; };
+		8F20D0BC2E8B142F0041D4FE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8F20D0BB2E8B142F0041D4FE /* SnapKit-Dynamic */; };
 		A3A1915699D0198BCEA14C70 /* Pods_Dependency_managers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FD721E8C7B7DDD0D6635D5 /* Pods_Dependency_managers.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +35,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F76399DF2D93FED100285390 /* Dependency_managers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = Dependency_managers;
 			sourceTree = "<group>";
 		};
@@ -46,6 +46,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A1915699D0198BCEA14C70 /* Pods_Dependency_managers.framework in Frameworks */,
+				8F20D0BA2E8B142F0041D4FE /* SnapKit in Frameworks */,
+				8F20D0BC2E8B142F0041D4FE /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +60,6 @@
 				3FE5AF12E0E1C984E039A0A8 /* Pods-Dependency_managers.debug.xcconfig */,
 				C4FA895D289A9B22C9197EF2 /* Pods-Dependency_managers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +139,9 @@
 			);
 			mainGroup = F76399D42D93FED100285390;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F20D0B82E8B142F0041D4FE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F76399DE2D93FED100285390 /* Products */;
 			projectDirPath = "";
@@ -189,9 +193,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Dependency_managers/Pods-Dependency_managers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Dependency_managers/Pods-Dependency_managers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,7 +256,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -309,7 +317,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,6 +433,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F20D0B82E8B142F0041D4FE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F20D0B92E8B142F0041D4FE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F20D0B82E8B142F0041D4FE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8F20D0BB2E8B142F0041D4FE /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F20D0B82E8B142F0041D4FE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F76399D52D93FED100285390 /* Project object */;
 }
